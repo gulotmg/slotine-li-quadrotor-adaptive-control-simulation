@@ -63,7 +63,7 @@ Where:
 * $\mathbf{s}=\dot{\mathbf{e}}+\boldsymbol{\Lambda}\mathbf{e}$ defines the sliding surface manifold vector.
 * $\hat{\boldsymbol{\pi}}$ is updated online using a robust adaptation law with $\sigma$-leakage to prevent parameter drift:
 
-$$\dot{\hat{\boldsymbol{\pi}}}=\begin{cases}-\mathbf{K}_{\pi}(\mathbf{Y}^T\mathbf{s})-\sigma_{\pi}(\hat{\boldsymbol{\pi}}-\boldsymbol{\pi}_{\text{nom}})&\text{if }\|\mathbf{s}\|>0.02\\-\sigma_{\pi}(\hat{\boldsymbol{\pi}}-\boldsymbol{\pi}_{\text{nom}})&\text{if }\|\mathbf{s}\|\le0.02\end{cases}$$
+$$\dot{\hat{\boldsymbol{\pi}}}=\begin{cases}-\mathbf{K}_{\pi}(\mathbf{Y}^T\mathbf{s})-\sigma_{\pi}(\hat{\boldsymbol{\pi}}-\boldsymbol{\pi}_{\text{nom}})&\text{if }\|\mathbf{s}\|>0.02\\\\-\sigma_{\pi}(\hat{\boldsymbol{\pi}}-\boldsymbol{\pi}_{\text{nom}})&\text{if }\|\mathbf{s}\|\le0.02\end{cases}$$
 
 ### Classic Linear PD Control Law
 For the linearized quadrotor dynamics, the vertical thrust variation $\Delta F$ and orientation control torques $(\tau_\phi,\tau_\theta,\tau_\psi)$ are governed by:
