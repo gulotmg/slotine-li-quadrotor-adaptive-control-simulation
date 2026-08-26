@@ -125,8 +125,9 @@ $$\tau_\psi=I_{zz}(-k_{v,\psi}\dot{\psi}-k_{p,\psi}(\psi-\bar{\psi}))$$
    ```matlab
    open_system('quadrotor_adaptive_control.slx')
    ```
+---
 
-### Academic Integrity & Disclaimer
+## Academic Integrity & Disclaimer
 This repository contains the dynamic models, observers, and Slotine-Li adaptive control 
 algorithms developed for academic and portfolio demonstration purposes. 
 
