@@ -86,7 +86,25 @@ $$\tau_\psi=I_{zz}(-k_{v,\psi}\dot{\psi}-k_{p,\psi}(\psi-\bar{\psi}))$$
 | **Dryden Wind Gusts ($t=85\text{ s}$)** | Near-zero steady-state tracking error | Uncompensated drift under continuous wind forces | High amplitude oscillations and persistent tracking error |
 | **Motor Power Loss (20%)** | Robust compensation with minimal trajectory disturbance | Moderate trajectory tracking degradation | Severe trajectory deviation and potential instability |
 
-**Conclusion:** Integrating an unmodeled disturbance observer alongside the Slotine-Li adaptive algorithm provides superior rejection of both internal structural shifts and external aerodynamic forces.
+* **Linear controller PD position tracking error**
+<img width="1917" height="953" alt="linear" src="https://github.com/user-attachments/assets/35c5c90b-89b2-4d79-97bb-cdf329119784" />
+
+* **Adaptive controller position tracking error**
+
+<img width="1916" height="952" alt="adaptive" src="https://github.com/user-attachments/assets/b963c039-f1f1-49d5-a236-8701fed5d4f4" />
+
+
+
+* **Adaptive controller + disturbance estimator position tracking error**
+<img width="1916" height="956" alt="adaptive+estimator" src="https://github.com/user-attachments/assets/2466d990-4d95-4c39-afef-22be3b8a91ed" />
+
+
+
+
+**Conclusion:** Integrating an unmodeled disturbance observer alongside the Slotine-Li adaptive algorithm provides better rejection of both parameteres variations (i.e. mass and inertia) and external unmodeled disturbance forces.
+
+
+
 
 ---
 
