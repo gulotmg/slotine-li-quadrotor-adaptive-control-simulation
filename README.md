@@ -1,11 +1,42 @@
 # Slotine-Li Adaptive Control for Quadrotor Trajectory Tracking
 
-This repository contains the **MATLAB/Simulink** implementation and comparative performance analysis of a **Slotine-Li Adaptive Control architecture with an unmodeled disturbance estimator** applied to a quadrotor UAV. The system is designed for high-accuracy trajectory tracking under parametric uncertainties (mass and inertia variations) and external atmospheric disturbances (Dryden wind gusts).
+This repository contains the **MATLAB/Simulink** implementation and comparative performance analysis of a **Slotine-Li Adaptive Control architecture with an unmodeled disturbance estimator** applied to a quadrotor UAV, submitted as part of the exam of "Distributed and Mobile Robotics" in the MSc in Electronics Engineering at University of Palermo. The system is designed for high-accuracy trajectory tracking under parametric uncertainties (mass and inertia variations) and external atmospheric disturbances (Dryden wind gusts).
 
 A direct performance comparison is conducted against a standard Slotine-Li Adaptive Controller and a classical Proportional-Derivative (PD) Linear Controller.
 
 ---
+## Getting Started & Simulation Setup
 
+### Prerequisites
+* MATLAB R2025a or newer
+* Simulink
+* Aerospace Blockset *(required for the Dryden Wind Turbulence Model)*
+
+### Running the Simulation
+
+1. Run the initialization script in MATLAB workspace to load estimator initial conditions $\hat{\boldsymbol{\pi}}_0$:
+   ```matlab
+   run('pi_hat_init.m')
+   ```
+2. Open and run the Simulink simulation model:
+   ```matlab
+   open_system('quadrotor_adaptive_control.slx')
+   ```
+---
+## Download and Clone
+
+### Clone with Git
+
+```bash
+git clone https://github.com/gulotmg/Bare-metal-STM32-Nucleo-C03.git
+cd Bare-metal-STM32-Nucleo-C03
+```
+
+### Download as ZIP
+
+[Download ZIP](https://github.com/gulotmg/Bare-metal-STM32-Nucleo-C03/archive/refs/heads/main.zip)
+
+---
 ## Project Information & Academic Context
 
 * **Authors:** Marco Gulotta, Antonino Daidone
@@ -108,24 +139,6 @@ $$\tau_\psi=I_{zz}(-k_{v,\psi}\dot{\psi}-k_{p,\psi}(\psi-\bar{\psi}))$$
 
 ---
 
-## Getting Started & Simulation Setup
-
-### Prerequisites
-* MATLAB R2025a or newer
-* Simulink
-* Aerospace Blockset *(required for the Dryden Wind Turbulence Model)*
-
-### Running the Simulation
-
-1. Run the initialization script in MATLAB workspace to load estimator initial conditions $\hat{\boldsymbol{\pi}}_0$:
-   ```matlab
-   run('pi_hat_init.m')
-   ```
-2. Open and run the Simulink simulation model:
-   ```matlab
-   open_system('quadrotor_adaptive_control.slx')
-   ```
----
 
 ## Academic Integrity & Disclaimer
 This repository contains the dynamic models, observers, and Slotine-Li adaptive control 
