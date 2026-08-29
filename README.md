@@ -28,13 +28,13 @@ A direct performance comparison is conducted against a standard Slotine-Li Adapt
 ### Clone with Git
 
 ```bash
-git clone https://github.com/gulotmg/Bare-metal-STM32-Nucleo-C03.git
-cd Bare-metal-STM32-Nucleo-C03
+git clone https://github.com/gulotmg/slotine-li-quadrotor-adaptive-control-simulation.git
+cd slotine-li-quadrotor-adaptive-control-simulation
 ```
 
 ### Download as ZIP
 
-[Download ZIP](https://github.com/gulotmg/Bare-metal-STM32-Nucleo-C03/archive/refs/heads/main.zip)
+[Download ZIP](https://github.com/gulotmg/slotine-li-quadrotor-adaptive-control-simulation/archive/refs/heads/main.zip)
 
 ---
 ## Project Information & Academic Context
