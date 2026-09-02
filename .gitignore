@@ -1,0 +1,33 @@
+# STM32CubeIDE / GCC ARM Build Outputs
+Debug/
+Release/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.o
+*.d
+*.su
+*.cyclo
+
+# STM32CubeIDE / Eclipse Project Files
+.settings/
+.metadata/
+
+# Xilinx Vivado Temporary & Output Files
+
+*.jou
+*.log
+*.str
+.Xil/
+*.hw/
+*.cache/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.data/
+
+.DS_Store
+Thumbs.db
+Desktop.ini
